@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import './App.css'
-import SingleCard from './components/SingleCard'
+import Card from './components/Card'
 
 const cardImages = [
   { "src": "/img/pic1.jpg", matched: false },
@@ -90,7 +90,7 @@ function App() {
 
       <div className="card-grid">
         {cards.map(card => (
-          <SingleCard 
+          <Card 
             key={card.id}
             card={card}
             handleChoice={handleChoice}
